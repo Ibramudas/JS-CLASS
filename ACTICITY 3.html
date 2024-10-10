@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JAVASCRIPT CLASS</title>
+    </head>
+    <body>
+        <h1> JAVASCRIPT CLASS</h1>
+        <h4 id="h4"></h4>
+        <h4 id="h5"></h4>
+        <h4></h4>
+        <script>
+            class Students{
+                constructor(name){
+                    this.name=name
+                }
+                static Hello(){
+                    return "The student name is" + this.name
+                }
+                
+            HI(){
+                return "Hi"
+            }
+            }
+            let student1 = new Students("Tina")
+            document.getElementById("h4").innerHTML=Students.Hello();
+            document.getElementById("h5").innerHTML=student1.HI();
+            </script>
