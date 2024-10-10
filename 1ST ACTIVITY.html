@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JAVASCRIPT CLASS</title>
+    </head>
+    <body>
+        <h1> JAVASCRIPT CLASS</h1>
+        <h4 id="h4"></h4>
+        <h4 id="h5"></h4>
+        <script>
+            class Student{
+                constructor(name,year){
+                    this.name=name;
+                    this.year=year;
+                }
+                age(){
+                    let date=new Date()
+                    return date.getFullYear()-this.year
+                }
+            }
+            student1=new Student("Tina", 2007);
+            document.getElementById("h4").innerHTML="The student name is" + student1.name +" and she was born in" +student1.year+ "and her age is" +student1.age();
+            </script>    
+            </body>
+</html>
